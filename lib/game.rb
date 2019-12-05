@@ -34,5 +34,6 @@ class Game
       false
     end
   end
+end
   
 end
