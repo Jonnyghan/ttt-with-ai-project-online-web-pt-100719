@@ -26,9 +26,9 @@ class Game
  def won?
   WIN_COMBINATIONS.find do 
     |win_combo|
-    if (@cells[win_combo[0]]) == "X" && (@cells[win_combo[1]]) == "X" && (@cells[win_combo[2]]) == "X"
+    if (board.cells[win_combo[0]]) == "X" && (board.cells[win_combo[1]]) == "X" && (@cells[win_combo[2]]) == "X"
       return win_combo
-    elsif (@cells[win_combo[0]]) == "O" && (@cells[win_combo[1]]) == "O" && (@cells[win_combo[2]]) == "O"
+    elsif (board.cells[win_combo[0]]) == "O" && (board.cells[win_combo[1]]) == "O" && board.cells[win_combo[2]]) == "O"
       return win_combo
     end
       false
