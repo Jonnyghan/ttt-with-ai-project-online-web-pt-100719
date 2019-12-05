@@ -43,4 +43,9 @@ class Board
     !(taken?(input))&& input.between?(1,9)
   end
   
+  def update(index,player)
+    
+  end
+  
+  
 end
