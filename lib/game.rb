@@ -33,4 +33,12 @@ class Game
     board.full? && !won?
   end
   
+  def over?
+    if draw?
+      true 
+    else
+      false 
+    end
+  end
+  
 end
