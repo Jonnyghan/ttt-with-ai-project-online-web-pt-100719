@@ -44,6 +44,7 @@ class Board
   end
   
   def update(index,player)
+    binding.pry 
     input = index.to_i
     position(input) == player.token
   end
