@@ -1,4 +1,4 @@
-require_relative "./human.rb"
+require_relative "./players/human.rb"
 class Game
   attr_accessor :board, :player_1, :player_2, :timer
   
