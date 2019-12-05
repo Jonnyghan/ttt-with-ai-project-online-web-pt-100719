@@ -43,10 +43,9 @@ class Board
     !(taken?(input))&& input.between?(1,9)
   end
   
-  def update(index,player)
-    binding.pry 
-    input = index.to_i
-    position(input) = player.token
+  def update(input, player)
+    input = input.to_i
+    cells[input -1] = player.token
   end
   
   
