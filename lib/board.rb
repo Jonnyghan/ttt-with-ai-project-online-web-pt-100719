@@ -46,7 +46,7 @@ class Board
   def update(index,player)
     binding.pry 
     input = index.to_i
-    position(input) == player.token
+    position(input) = player.token
   end
   
   
