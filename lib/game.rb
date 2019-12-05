@@ -34,7 +34,7 @@ class Game
   end
   
   def over?
-    if draw?
+    if draw? || won?
       true 
     else
       false 
