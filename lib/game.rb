@@ -25,5 +25,6 @@ class Game
 
 def won?   
  WIN_COMBINATIONS.each do |combo|
+   if board.cells[combo[0]]
   
 end  
