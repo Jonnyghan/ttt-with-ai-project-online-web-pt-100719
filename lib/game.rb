@@ -30,7 +30,7 @@ class Game
       return win_combo
     elsif (board.cells[win_combo[0]]) == "O" && (board.cells[win_combo[1]]) == "O" && board.cells[win_combo[2]]) == "O"
       return win_combo
-    end
+    else
       false
     end
   end
