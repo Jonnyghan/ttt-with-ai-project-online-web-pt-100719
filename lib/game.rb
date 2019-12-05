@@ -23,7 +23,7 @@ class Game
   board.turn_count.odd?? player_2 : player_1
  end
 
-end  
-   
- 
+def won?   
+ WIN_COMBINATIONS.each do |combo|
   
+end  
