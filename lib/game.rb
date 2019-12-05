@@ -29,4 +29,8 @@ class Game
     end
   end
   
+  def draw?
+    board.full? && !won?
+  end
+  
 end
