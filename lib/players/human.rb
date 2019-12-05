@@ -1,4 +1,4 @@
-class Players:: Human < Player
+class Player:: Human < Player
   
 
 end
