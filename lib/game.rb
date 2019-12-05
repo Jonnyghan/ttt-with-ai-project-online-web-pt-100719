@@ -75,8 +75,4 @@ class Game
 end  
    
  
-  def board
-    
-  end
   
-end
