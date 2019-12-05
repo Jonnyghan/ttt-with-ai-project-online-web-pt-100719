@@ -1,4 +1,5 @@
 class Game
+  attr_accessor :board, :player_1, :player_2, :timer
   
    WIN_COMBINATIONS = [
     [0,1,2], #Top Row 
@@ -10,7 +11,15 @@ class Game
     [1,4,7],
     [2,5,8]
     ]
-  
+ 
+ def initialize(player_1 = Player::Human.new("X"), player_2 = Player::Human.new("O"),board = Board.new,wargame = false)
+   @player_1 = player_1
+   @player_2 = player_2
+   @board = board
+   @wargame = wargame
+   @timer= 1.5
+ end
+ 
   def board
     
   end
