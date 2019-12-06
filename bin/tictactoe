@@ -16,11 +16,11 @@ def game_start
   1 - Bruh VS Computah
   2 - Bruh VS Your Bruh"
 
-  playmode = gets
+  playmode = gets.strip
 
   if playmode == "1"
     puts "You wanna go first?!?! [yerrr or nah]"
-    if gets == "yerrr"
+    if gets.strip == "yerrr"
       Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new).play
     else   Game.new(Players::Computer.new("X"), Players::Human.new("O"), Board.new).play
     end
