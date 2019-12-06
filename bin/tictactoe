@@ -28,7 +28,7 @@ def game_start
   elsif playmode == "0"
     Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new).play
 
-  elsif player_mode == "2"
+  elsif playmode == "2"
     Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new).play
   end
   puts "Would like to play again? [yerrr or nah]"
