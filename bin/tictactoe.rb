@@ -1,10 +1,5 @@
 #!/usr/bin/env ruby
-require_relative '../config/environment'
-require_relative './lib/board.rb'
-require_relative './lib/game.rb'
-require_relative './lib/player.rb'
-require_relative './lib/players/computer.rb'
-require_relative './lib/players/human.rb'
+require_relative '../config/environment.rb'
 
 puts "Welcome to Tic Tac Toe"
 
