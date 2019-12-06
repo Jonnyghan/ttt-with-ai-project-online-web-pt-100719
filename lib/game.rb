@@ -52,7 +52,7 @@ class Game
       system('clear')
       puts "Game #{@counter}" if @wargame
       board.display
-    elsif input.between?(1, 9) == false
+    else
       puts "That is an invalid move"
       turn
     else
