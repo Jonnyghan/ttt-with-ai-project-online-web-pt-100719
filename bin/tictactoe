@@ -10,17 +10,17 @@ require_relative '../lib/players/human.rb'
 
 
 def game_start
-  puts "\nWelcome to Command Line Tic Tac Toe!"
-  puts "\nWhat kind of game will you like to play? Please choose player mode:
-  0 - Computer VS Computer
-  1 - You VS Computer
-  2 - You VS Your friend"
+  puts "Welcome to Tic Tac BRO!"
+  puts "AYE HOW MANY PEOPLE ARE PLAYNG? Choose a mode, my guy!:
+  0 - Computah VS Computah
+  1 - Bruh VS Computah
+  2 - Bruh VS Your Bruh"
 
-  player_mode = gets.strip
+  playmode = gets
 
-  if player_mode == "1"
-    puts "Do you want to go first? [y/ n]"
-    if gets.strip == "y"
+  if playmode == "1"
+    puts "You wanna go first?!?! [yeah or nah]"
+    if gets == "y"
       Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new).play
     else   Game.new(Players::Computer.new("X"), Players::Human.new("O"), Board.new).play
     end
