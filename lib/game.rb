@@ -64,6 +64,6 @@ def turn
       puts "Cat's game!"
     end
   end
-  end  
+  
  
 end
