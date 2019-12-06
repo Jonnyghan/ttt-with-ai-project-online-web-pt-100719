@@ -45,16 +45,20 @@ class Game
     board.cells[won?[0]] if won?
   end
   def turn
-    puts "please enter a value from 1 to 9:"
-    input = gets 
-    index = input_to_index(input)
-    #p = current_player
-    if valid_move?(index)
-      move(index, current_player)
-      display_board
+    puts "It's now #{current_player.token}'s turn."
+    input = current_player.move(board, timer).to_i
+    if board.valid_move?(input.to_s)
+      board.update(input, current_player)
+      system('clear')
+      puts "Game #{@counter}" if @wargame
+      board.display
+    elsif input.between?(1, 9) == false
+      puts "That is an invalid move"
+      turn
     else
+      puts "Whoops! Looks like that position is taken"
       turn
     end
-   end
+  end
  
 end
