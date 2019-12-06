@@ -57,7 +57,13 @@ def turn
   end
   
   def play
-    
+    turn until over?
+    if won?
+      puts "Congratulations #{winner}!"
+      elsif draw?
+      puts "Cat's game!"
+    end
+  end
   end  
  
 end
