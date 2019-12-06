@@ -7,5 +7,5 @@ require_relative '../lib/players/computer.rb'
 require_relative '../lib/players/human.rb'
 
 
-puts "Welcome to Tic Tac Toe"
+
 Game.new
