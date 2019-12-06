@@ -44,5 +44,17 @@ class Game
   def winner
     board.cells[won?[0]] if won?
   end
-  
+  def turn
+    puts "please enter a value from 1 to 9:"
+    input = gets 
+    index = input_to_index(input)
+    #p = current_player
+    if valid_move?(index)
+      move(index, current_player)
+      display_board
+    else
+      turn
+    end
+   end
+ 
 end
