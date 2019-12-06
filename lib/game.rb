@@ -46,7 +46,7 @@ class Game
   end
   def turn
     puts "It's now #{current_player.token}'s turn."
-    input = current_player.move(board, timer).to_i
+    input = current_player.move(board)
     if board.valid_move?(input.to_s)
       board.update(input, current_player)
       system('clear')
