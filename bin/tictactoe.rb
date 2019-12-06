@@ -4,7 +4,7 @@ require_relative '../config/environment'
 puts "Welcome to Tic Tac Toe"
 
 def start
-puts "How many players?"(0,1 or 2)
+puts "How many players?(0,1 or 2)"
 input = gets.strip
   case input
     when "0"
