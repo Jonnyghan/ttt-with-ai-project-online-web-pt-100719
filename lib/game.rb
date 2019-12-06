@@ -55,5 +55,7 @@ def turn
     end
     @board.display
   end
+  
+  def play
  
 end
