@@ -46,13 +46,13 @@ class Game
   end
   def turn
     puts "It's now #{current_player.token}'s turn."
-    input = current_player.move(board)
+    input = current_player.move(board, timer).to_i
     if board.valid_move?(input.to_s)
       board.update(input, current_player)
       system('clear')
       puts "Game #{@counter}" if @wargame
       board.display
-    else
+    elsif input.between?(1, 9) == false
       puts "That is an invalid move"
       turn
     else
