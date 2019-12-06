@@ -19,19 +19,19 @@ def game_start
   playmode = gets
 
   if playmode == "1"
-    puts "You wanna go first?!?! [yeah or nah]"
-    if gets == "y"
+    puts "You wanna go first?!?! [yerrr or nah]"
+    if gets == "yerrr"
       Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new).play
     else   Game.new(Players::Computer.new("X"), Players::Human.new("O"), Board.new).play
     end
 
-  elsif player_mode == "0"
+  elsif playmode == "0"
     Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new).play
 
   elsif player_mode == "2"
     Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new).play
   end
-  puts "Would like to play again? [y/ n]"
+  puts "Would like to play again? [yerrr or nah]"
 
 end
 
