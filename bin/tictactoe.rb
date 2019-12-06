@@ -1,6 +1,11 @@
 #!/usr/bin/env ruby
 require_relative '../config/environment'
-require_all 'lib'
+require_relative './board.rb'
+require_relative './game.rb'
+require_relative './player.rb'
+require_relative '.players/computer.rb'
+require_relative '.players/human.rb'
+
 puts "Welcome to Tic Tac Toe"
 
 def start
