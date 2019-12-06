@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 require_relative '../config/environment'
-
+require_relative
 puts "Welcome to Tic Tac Toe"
 
 def start
