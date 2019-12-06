@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
-puts "
 require_relative '../config/environment'
 
-def
+puts "Welcome to Tic Tac Toe"
+
+def start
+puts "How many players?(0,1 or 2)
