@@ -65,5 +65,30 @@ def turn
     end
   end
   
- 
+ def start
+puts "How many players?(0,1 or 2)"
+input = gets.strip
+  case input
+    when "0"
+      Game.new(Player::Computer.new("X"), Player::Computer.new("O")).play
+      puts "That was fun! Would you like to play again?"
+      loop_around
+    when "1"
+      Game.new(Player::Human.new("X"), Player::Computer.new("O")).play
+      puts "That was fun! Would you like to play again?"
+      loop_around
+    when "2"
+      Game.new(Player::Human.new("X"), Player::Human.new("O")).play
+      puts "That was fun! Would you like to play again?"
+      loop_around
+    when "wargames"
+      Game.new(Player::Computer.new("X"), Player::Computer.new("O"), Board.new, true).wargames
+      puts "That was fun! Would you like to play again?"
+      loop_around
+    else
+      puts "That is an invalid entry"
+      start
+  end
+end
+
 end
