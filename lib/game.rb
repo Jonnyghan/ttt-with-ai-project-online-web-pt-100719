@@ -41,4 +41,8 @@ class Game
     end
   end
   
+  def winner
+    board.cells[won?[0]] if won?
+  
+  
 end
